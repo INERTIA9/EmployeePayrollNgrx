@@ -1,0 +1,74 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "fullName": "Saurabh D",
+      "profilePic": "1",
+      "gender": "Male",
+      "salary": 70000,
+      "date": "2022-02-25T18:30:00.000Z",
+      "note": "VERY EFFICINET",
+      "department": [
+        "HR",
+        "Sales"
+      ],
+      "type": "[post page] add post"
+    },
+    {
+      "id": 2,
+      "fullName": "prem p",
+      "profilePic": "1",
+      "gender": "Male",
+      "salary": 100000,
+      "date": "2022-02-22T18:30:00.000Z",
+      "note": "very",
+      "department": [
+        "HR",
+        "Sales"
+      ],
+      "type": "[post page] add post"
+    },
+    {
+      "id": 3,
+      "fullName": "alexa a",
+      "profilePic": "2",
+      "gender": "Female",
+      "salary": 55000,
+      "date": "2022-02-24T18:30:00.000Z",
+      "note": "vvvvvvv",
+      "department": [
+        "HR",
+        "Sales"
+      ],
+      "type": "[post page] add post"
+    },
+    {
+      "id": 4,
+      "fullName": "xxxxxxxxxxxxxx x",
+      "profilePic": "2",
+      "gender": "Female",
+      "salary": 50000,
+      "date": "2022-02-08T18:30:00.000Z",
+      "note": "VERY EFFICINET",
+      "department": [
+        "HR",
+        "Sales",
+        "Finance"
+      ],
+      "type": "[post page] add post"
+    },
+    {
+      "id": 5,
+      "fullName": "Saurabh z",
+      "profilePic": "1",
+      "gender": "Male",
+      "salary": 40000,
+      "date": "2022-02-25T18:30:00.000Z",
+      "note": "dddddddddddd",
+      "department": [
+        "HR"
+      ],
+      "type": "[post page] add post"
+    }
+  ]
+}

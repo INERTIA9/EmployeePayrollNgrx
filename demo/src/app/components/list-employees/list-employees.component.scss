@@ -1,0 +1,126 @@
+.header {
+    font-size: 20px;
+    font-family: random($limit: 10);
+    display: flex;
+    justify-content: start;
+    
+}
+.search_bar {
+    margin-left: 133px;
+    border-radius: 3px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+.search_input {
+    height: 14px;
+    width: 490px;
+    outline: none;
+    border: none;
+}
+.search_icon {
+    margin-left: -121px;
+}
+.crossbutton {
+    background: transparent;
+    color: #5f6368;
+    border: none;
+}
+.example-card {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 180px;
+    min-height: 250px;
+    padding: 16px 13px 0px;
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,1), 
+                0 1px 1px 0 rgba(0,0,0,1), 
+                0 1px 3px 0 rgba(0,0,0,1);
+    border-radius: 9px;
+    border-width: 1px;
+    margin-bottom: 25px;
+    background-color: #ededed ;
+}
+
+
+.matcardtitle {
+    letter-spacing: 0.00625em;
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    padding-top: 12px;
+}
+.matcarddescription {
+    display: block;
+    display: -webkit-box;
+    max-width: 100%;
+    margin: 0 auto;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 1;
+    -webkit-line-clamp: 13;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+.example-card .icon {
+    visibility: hidden;
+}
+.example-card:hover .icon {
+    visibility: visible;
+}
+.example-button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 120px;
+}
+.minifab {
+    border-radius: 50%;
+    background-color: darkgray;
+    height: 24px;
+    width: 24px;
+    border: 2px solid white;
+}
+.collabname {
+    margin-left: 7px;
+    margin-top: -15px;
+    font-size: 13px;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: flex;
+    border-radius: 50%;
+    
+}
+body
+{
+  background-color:#4da6ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+#circle
+{
+  width: 40%;
+  border:1px solid black;
+  border-radius:100%;
+  margin-top: 20px;
+  
+}
+.vl {
+    border-left: 6px solid green;
+    margin-right: 3px;
+    
+  }
+  .example-spacer{
+      flex:  1 1 auto;
+  }

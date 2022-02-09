@@ -1,0 +1,73 @@
+<form [formGroup]="UpdateForm" fxLayout="column" fxLayoutGap="0px">
+
+    <div>
+        <span>EmployeeName</span>
+        <div>
+            <mat-form-field width="600px" appearance="outline">
+                <input matInput [(ngModel)]="fullName" formControlName="fullName">
+                <mat-error>bookname Required!</mat-error>
+            </mat-form-field>
+        </div>
+    </div>
+
+    <div>
+        <span>profilePic</span>
+        <div>
+            <mat-form-field width="600px" appearance="outline">
+                <input matInput [(ngModel)]="profilePic" formControlName="profilePic">
+                <mat-error>bookname Required!</mat-error>
+            </mat-form-field>
+        </div>
+    </div>
+    
+
+    <div>
+        <span>Gender</span>
+        <div>
+            <mat-form-field width="600px" appearance="outline">
+                <input matInput [(ngModel)]="gender" formControlName="gender">
+                <mat-error>bookname Required!</mat-error>
+            </mat-form-field>
+        </div>
+    </div>
+
+    
+
+    <div>
+        <span>Salary</span>
+        <div>
+            <mat-form-field width="600px" appearance="outline">
+                <input matInput [(ngModel)]="salary" formControlName="salary">
+                <mat-error>bookname Required!</mat-error>
+            </mat-form-field>
+        </div>
+    </div>
+
+    
+
+    <div>
+        <span>Note</span>
+        <div>
+            <mat-form-field width="600px" appearance="outline">
+                <input matInput [(ngModel)]="note" formControlName="note">
+                <mat-error>bookname Required!</mat-error>
+            </mat-form-field>
+        </div>
+    </div>
+
+    
+
+    <div>
+        <span>Department</span>
+        <div >
+            <mat-form-field width="600px" appearance="outline" >
+                <input matInput [(ngModel)]="department" formControlName="department">
+                <mat-error></mat-error>
+            </mat-form-field>
+        </div>
+    </div>
+
+    <button (click)="onupdate()">update</button>
+
+
+</form>

@@ -1,0 +1,67 @@
+<mat-card
+    style="background-color: #9e9ea7; margin-left: auto;margin-right: auto;display: flex;justify-content: center;">
+
+    <div fxLayout="row" fxLayoutAlign="start center">
+        <h1 class="header">Employees</h1>
+        
+        <div class="search_bar" [ngStyle.xs]="{'margin-left.px': 10}">
+            <div class="search_bar">
+
+                <input type="text" placeholder="Search..." class="search_input" [ngStyle.xs]="{'width.px': 10}"
+                    [(ngModel)]="value">
+                <button class="crossbutton" *ngIf="value" matSuffix mat-icon-button aria-label="Clear"
+                    (click)="value=''">
+                    <mat-icon>close</mat-icon>
+                </button>
+            </div>
+        </div>
+
+        
+        <button (click)="onadd()" style="margin-left: 50px;"> ADD Employee</button>
+    </div>
+</mat-card>
+
+<div
+    style="display: flex;flex-wrap:wrap;gap:15px;flex-direction: row;justify-content: start;margin-left: 100px;margin-top: 50px;position: relative;" >
+
+    <mat-card class="example-card " *ngFor="let emp of employee$ | async">
+
+        <button style="border: none; ">
+            <img  style="float: right;" [matMenuTriggerFor]="menu" src="../../../assets/more_vert_black_18dp.svg" alt="">
+        </button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item>
+                <mat-icon (click)="openDialog(emp)">edit</mat-icon>
+              
+            </button>
+            <button  mat-menu-item >
+                <mat-icon (click)="ondel(emp.id)" >delete</mat-icon>
+                
+            </button>
+            
+        </mat-menu>
+        <div>
+
+            <div class="body "*ngIf="emp.profilePic==1">
+                <img id="circle" class="center" src="../../../assets/clipboard-image.png">
+            </div>
+
+            <div class="body "*ngIf="emp.profilePic==2">
+                <img id="circle" class="center" src="../../../assets/img_avatar_female.png">
+            </div>
+            <mat-card-title class="matcardtitle"></mat-card-title>
+
+            <mat-card-content style="overflow: hidden;height: auto;">
+                <p class="matcarddescription">{{emp.fullName}}</p>
+            </mat-card-content>
+
+        </div>
+
+
+        <div style="margin-top: 70px;">
+            <span class="vl">
+            </span>
+            <span>{{emp.department}}</span>
+        </div>
+    </mat-card>
+</div>
